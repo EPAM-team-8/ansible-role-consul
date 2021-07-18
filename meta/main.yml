@@ -1,0 +1,6 @@
+---
+
+galaxy_info:
+  author: Styop harutyunyan
+  description: Ansible role for consul installation
+  company: EPAM

@@ -1,0 +1,7 @@
+---
+
+- name: 'Consul installation'
+  include_tasks: consul-install.yml
+
+- name: 'Create Systemd Consul Service'
+  include_tasks: consul-service.yml

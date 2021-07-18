@@ -1,0 +1,10 @@
+[Unit]
+Description=Consul
+
+[Service]
+ExecStart={{ consul_binary_path }}consul agent -dev -client 0.0.0.0
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

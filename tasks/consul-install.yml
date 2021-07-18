@@ -1,0 +1,10 @@
+---
+
+- name: 'Download and unarchive consul'
+  unarchive:
+    src: '{{ consul_binary_url }}'
+    remote_src: true
+    dest: '{{ consul_binary_path }}'
+    owner: root
+    group: root
+    mode: 0755
