@@ -1,5 +1,9 @@
 ---
 
+- name: Install unzip
+  apt: name=unzip state=present
+  become: true
+
 - name: 'Download and unarchive consul'
   unarchive:
     src: '{{ consul_binary_url }}'
